@@ -11,6 +11,14 @@ i.fas {
   display: block;
   text-align: center;
 }
+.getColor {
+  text-align: center;
+  margin: 10px;
+}
+input {
+  width: 250px;
+  padding: 5px;
+}
 #lightOn,
 #lightOff {
   background-color: yellow;

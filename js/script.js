@@ -1,6 +1,11 @@
 function changeColor() {
   const button = document.getElementsByClassName("fa-lightbulb")[0];
-  button.style.color = "yellow";
+  const getUsersColor = document.getElementsByName("getUsersColor")[0].value;
+  button.style.color = getUsersColor;
+  if (!getUsersColor) {
+    color = "yellow";
+  }
+
   const statusOfTheBulb = document.getElementById("statusOfTheBulb");
   statusOfTheBulb.innerHTML = "ON";
   const background = document.getElementsByTagName("body")[0];
