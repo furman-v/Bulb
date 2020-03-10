@@ -1,10 +1,10 @@
 function changeColor() {
   const button = document.getElementsByClassName("fa-lightbulb")[0];
-  const getUsersColor = document.getElementsByName("getUsersColor")[0].value;
-  button.style.color = getUsersColor;
+  let getUsersColor = document.getElementsByName("getUsersColor")[0].value;
   if (!getUsersColor) {
-    color = "yellow";
+    getUsersColor = "#ffff00";
   }
+  button.style.color = getUsersColor;
 
   const statusOfTheBulb = document.getElementById("statusOfTheBulb");
   statusOfTheBulb.innerHTML = "ON";
